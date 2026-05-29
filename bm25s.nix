@@ -5,14 +5,9 @@ pkgs.python313Packages.buildPythonPackage {
 
   inherit src;
 
-  pyproject = true;
+  format = "setuptools";
 
-  env.SETUPTOOLS_SCM_PRETEND_VERSION = "0.3.9";
-
-  build-system = with pkgs.python313Packages; [
-    setuptools
-    setuptools-scm
-  ];
+  env.BM25S_VERSION = "0.3.9";
 
   dependencies = with pkgs.python313Packages; [
     numpy
