@@ -7,6 +7,8 @@ pkgs.python313Packages.buildPythonPackage {
 
   pyproject = true;
 
+  env.SETUPTOOLS_SCM_PRETEND_VERSION = "0.3.9";
+
   build-system = with pkgs.python313Packages; [
     setuptools
     setuptools-scm
