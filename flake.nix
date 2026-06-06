@@ -7,7 +7,8 @@
   };
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs-lock.url = "github:pr0d1r2/nixpkgs-lock";
+    nixpkgs.follows = "nixpkgs-lock/nixpkgs";
     bm25s-src = {
       url = "github:xhluca/bm25s/0.3.9";
       flake = false;
