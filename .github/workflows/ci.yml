@@ -14,7 +14,7 @@ jobs:
   build-linux:
     runs-on: ubuntu-latest
     steps:
-      - uses: pr0d1r2/nix-lefthook-ci-action@a3d9a808cb5ef0ccf16286d3fab9275f1d52da38
+      - uses: pr0d1r2/nix-lefthook-ci-action@e03a5daf2cf1090e0313d46e6c69bbb29309fe71
         with:
           cachix-auth-token: ${{ secrets.CACHIX_AUTH_TOKEN }}
 
@@ -22,7 +22,7 @@ jobs:
     needs: build-linux
     runs-on: macos-latest
     steps:
-      - uses: pr0d1r2/nix-lefthook-ci-action@a3d9a808cb5ef0ccf16286d3fab9275f1d52da38
+      - uses: pr0d1r2/nix-lefthook-ci-action@e03a5daf2cf1090e0313d46e6c69bbb29309fe71
         with:
           cachix-auth-token: ${{ secrets.CACHIX_AUTH_TOKEN }}
 
@@ -30,7 +30,7 @@ jobs:
     needs: build-linux
     runs-on: ubuntu-latest
     steps:
-      - uses: pr0d1r2/nix-lefthook-ci-action@a3d9a808cb5ef0ccf16286d3fab9275f1d52da38
+      - uses: pr0d1r2/nix-lefthook-ci-action@e03a5daf2cf1090e0313d46e6c69bbb29309fe71
         with:
           extra-platforms: aarch64-linux
           cachix-auth-token: ${{ secrets.CACHIX_AUTH_TOKEN }}
