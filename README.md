@@ -1,5 +1,11 @@
 # nix-bm25s
 
+<!-- hallucinogen:autonomy-disclaimer start -->
+> Read [LLM-DISCLAIMER](docs/LLM-DISCLAIMER.md) first. This repository is
+> tended by an autonomous loop, and that file says what the loop may do here,
+> what it may not, and what to check before trusting anything in this tree.
+<!-- hallucinogen:autonomy-disclaimer end -->
+
 [![CI](https://github.com/pr0d1r2/nix-bm25s/actions/workflows/ci.yml/badge.svg)](https://github.com/pr0d1r2/nix-bm25s/actions/workflows/ci.yml)
 
 Nix package for [bm25s](https://github.com/xhluca/bm25s) — fast BM25 implementation using sparse matrices. Pre-built binaries served via [cachix](https://pr0d1r2.cachix.org).
